@@ -1,0 +1,60 @@
+soft_shadows
+{
+	rays: 0
+}
+cam
+{
+	position: 0 0 0
+	rotation: -5 0 0
+}
+point_light
+{
+	position: 50 500 400
+	intensity: 0.34
+}
+point_light
+{
+	position: -50 500 400
+	intensity: 0.33
+}
+point_light
+{
+	position: 50 500 0
+	intensity: 0.33
+}
+sphere
+{
+	position: 0 -20 600
+	color: 100 100 200
+	radius: 80
+	transparency: 0.5
+	reflection: 0
+	refraction: 2
+	texture: ./textures/water.xpm
+}
+sphere
+{
+	position: -230 -20 450
+	color: 100 100 200
+	radius: 70
+	transparency: 0
+	reflection: 0
+	refraction: 0
+	texture: ./textures/venera.xpm
+}
+ellipse
+{
+	position: 250 -20 500
+	size: 100 70 100
+	texture: ./textures/green.xpm
+}
+plane
+{
+	position: -100 -150 0
+	normal: 0 1 0
+	color: 255 255 255
+	transparency: 0
+	reflection: 0.3
+	refraction: 0
+	texture: ./textures/chess.xpm
+}

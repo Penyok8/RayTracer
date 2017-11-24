@@ -1,0 +1,136 @@
+cam
+{
+	position: 0 -200 0
+	rotation: -15 0 0
+}
+point_light
+{
+	position: 0 700 600
+	intensity: 1
+}
+plane
+{
+	position: 0 -400 0
+	normal: 0 1 0
+	color: 255 255 255
+	transparency: 0
+	reflection: 0
+	refraction: 0
+	texture: ./textures/space.xpm
+}
+plane
+{
+	position: 0 -300 2000
+	normal: 0 0 1
+	color: 255 255 255
+	transparency: 0
+	reflection: 0
+	refraction: 0
+	texture: ./textures/space.xpm
+}
+plane
+{
+	position: 0 -300 -2000
+	normal: 0 0 1
+	color: 255 255 255
+	transparency: 0
+	reflection: 0
+	refraction: 0
+	texture: ./textures/space.xpm
+}
+plane
+{
+	position: 1000 0 0
+	normal: 1 0 0
+	color: 255 255 255
+	transparency: 0
+	reflection: 0
+	refraction: 0
+	texture: ./textures/space.xpm
+}
+plane
+{
+	position: -1000 0 0
+	normal: 1 0 0
+	color: 255 255 255
+	transparency: 0
+	reflection: 0
+	refraction: 0
+	texture: ./textures/space.xpm
+}
+limited_cylinder
+{
+	position: 30 -350 600
+	rotation: 0 1 0
+	radius: 3
+	length: 100
+	color: 133 133 133
+	transparency: 0
+	reflection: 0
+}
+limited_cylinder
+{
+	position: -30 -350 600
+	rotation: 0 1 0
+	radius: 3
+	length: 100
+	color: 133 133 133
+	transparency: 0
+	reflection: 0
+	refraction: 0
+}
+limited_cylinder
+{
+	position: 30 -398 600
+	rotation: 0.4 0 1
+	radius: 3
+	length: 70
+	color: 133 133 133
+	transparency: 0
+	reflection: 0
+	refraction: 0
+}
+limited_cylinder
+{
+	position: -30 -398 600
+	rotation: 0.4 0 1
+	radius: 3
+	length: 70
+	color: 133 133 133
+	transparency: 0
+	reflection: 0
+	refraction: 0
+}
+limited_cylinder
+{
+	position: 0 -320 600
+	rotation: 0 1 0
+	radius: 25
+	length: 70
+	color: 133 133 133
+	transparency: 0
+	reflection: 0.1
+	refraction: 0
+}
+limited_cylinder
+{
+	position: -23 -305 600
+	rotation: 1 0 0
+	radius: 2
+	length: 11
+	color: 133 133 133
+	transparency: 0
+	reflection: 0
+	refraction: 0
+}
+limited_cylinder
+{
+	position: 23 -305 600
+	rotation: 1 0 0
+	radius: 2
+	length: 11
+	color: 133 133 133
+	transparency: 0
+	reflection: 0
+	refraction: 0
+}

@@ -1,0 +1,46 @@
+soft_shadows
+{
+	rays: 0
+}
+cam
+{
+	position: -400 400 -1000
+	rotation: 0 -30 0
+}
+point_light
+{
+	position: 200 500 -200
+	intensity: 0.7
+}
+parallel_light
+{
+	position: 0 400 300
+	direction: -1 1 -1
+	intensity: 0.3
+}
+cylinder
+{
+	position: -100 0 0
+	direction: 0 1 0
+	color: 255 255 0
+	radius: 50
+}
+cylinder
+{
+	position: 100 0 0
+	direction: 0 1 0
+	color: 178 100 0
+	radius: 50
+}
+plane
+{
+	position: 0 -100 300
+	normal: 0 1 0
+	color: 155 155 155
+}
+plane
+{
+	position: 0 -100 3000
+	normal: 0 0 1
+	color: 255 255 255
+}

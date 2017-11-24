@@ -1,0 +1,100 @@
+soft_shadows
+{
+	rays: 0
+}
+cam
+{
+	position: 0 0 -700
+	rotation: -10 0 0
+}
+point_light
+{
+	position: 50 500 -500
+	intensity: 1
+}
+limited_cylinder
+{
+	position: 0 -200 300
+	rotation: 0 1 0
+	radius: 50
+	length: 130
+	color: 133 133 133
+	transparency: 0
+	reflection: 0
+	refraction: 0
+	texture: ./textures/chess.xpm
+}
+disk
+{
+	position: 0 -120 310
+	normal: 0 1 0
+	color: 100 255 255
+	radius: 100
+	innerRadius: 50
+	transparency: 0
+	reflection: 0
+	refraction: 0
+	texture: ./textures/chess.xpm
+}
+disk
+{
+	position: 0 -120 310
+	normal: 0 1 0
+	color: 0 0 0
+	radius: 50
+	innerRadius: 0
+	transparency: 0
+	reflection: 0
+	refraction: 0
+}
+ellipse
+{
+	position: -20 -120 300
+	size: 10 100 20
+	color: 255 255 255
+}
+ellipse
+{
+	position: 20 -120 300
+	size: 10 100 20
+	color: 255 255 255
+}
+plane
+{
+	position: -300 -300 0
+	normal: 0 1 0
+	color: 255 255 255
+	transparency: 0
+	reflection: 0
+	refraction: 0
+	texture: ./textures/wood.xpm
+}
+plane
+{
+	position: 0 1000 0
+	normal: 0 1 0
+	color: 255 255 255
+	transparency: 0
+	reflection: 0
+	refraction: 0
+	texture: ./textures/space.xpm
+}
+plane
+{
+	position: 0 -500 2000
+	normal: 0 0 1
+	color: 255 255 255
+	transparency: 0
+	reflection: 0
+	refraction: 0
+	texture: ./textures/art.xpm
+}
+plane
+{
+	position: 0 -300 -2000
+	normal: 0 0 1
+	color: 255 255 255
+	transparency: 0
+	reflection: 0
+	refraction: 0
+}

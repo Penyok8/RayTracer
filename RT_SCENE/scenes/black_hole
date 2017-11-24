@@ -1,0 +1,27 @@
+soft_shadows
+{
+	rays: 0
+}
+cam
+{
+	position: 0 0 -300
+	rotation: 0 0 0
+}
+point_light
+{
+	position: 0 400 300
+	intensity: 1
+}
+sphere
+{
+	position: 0 -100 300
+	radius: 60
+	color: 255 255 255
+}
+plane
+{
+	position: 0 -100 300
+	normal: 0 1 0
+	sphereRadius: 100
+	color: 0 0 0
+}

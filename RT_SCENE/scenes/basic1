@@ -1,0 +1,62 @@
+soft_shadows
+{
+	rays: 0
+}
+cam
+{
+	position: 0 0 -300
+	rotation: 0 0 0
+}
+point_light
+{
+	position: 0 200 0
+	intensity: 1
+}
+cone
+{
+	position: 0 100 500
+	direction: 0 1 0
+	angle: 10
+	color: 78 24 61
+}
+cylinder
+{
+	position: 200 100 200
+	direction: 0 1 1
+	radius: 20
+	color: 169 151 46
+}
+cylinder
+{
+	position: -200 100 200
+	direction: 0 1 1
+	radius: 20
+	color: 110 73 42
+}
+sphere
+{
+	position: 0 100 500
+	radius: 80
+	color: 229 212 226
+	transparency: 0
+	reflection: 0
+	refraction: 0
+}
+plane
+{
+	position: 0 -100 500
+	normal: 0 1 0
+	color: 172 194 206
+	transparency: 0
+	reflection: 0
+	refraction: 0
+}
+plane
+{
+	position: 0 0 2500
+	normal: 0 0 1
+	color: 195 173 142
+	transparency: 0
+	reflection: 0
+	refraction: 0
+}

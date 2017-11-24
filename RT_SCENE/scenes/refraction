@@ -1,0 +1,28 @@
+soft_shadows
+{
+	rays: 0
+}
+cam
+{
+	position: 0 -150 0
+	rotation: -15 0 0
+}
+sphere
+{
+	position: 0 -250 500
+	radius: 130
+	color: 255 255 0
+	transparency: 1
+	reflection: 0
+	refraction: 2
+}
+plane
+{
+	position: 8000 1000 1800
+	normal: 0 0 1
+	color: 255 255 255
+	transparency: 0
+	reflection: 0
+	refraction: 0
+	texture: ./textures/opposite.xpm
+}

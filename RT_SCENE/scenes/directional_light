@@ -1,0 +1,80 @@
+soft_shadows
+{
+	rays: 0
+}
+cam
+{
+	position: 0 -150 0
+	rotation: -15 0 0
+}
+directional_light
+{
+	position: 180 200 600
+	intensity: 1
+	direction: 0 0.5 0
+	angle: 30
+}
+directional_light
+{
+	position: -180 200 600
+	intensity: 1
+	direction: 0 0.5 0
+	angle: 30
+}
+directional_light
+{
+	position: -10 300 800
+	intensity: 1
+	direction: 0 0.25 0
+	angle: 30
+}
+directional_light
+{
+	position: 10 300 400
+	intensity: 3
+	direction: 0 0.25 0
+	angle: 30
+}
+plane
+{
+	position: 0 -400 0
+	normal: 0 1 0
+	color: 255 255 255
+	transparency: 0
+	reflection: 0.3
+	refraction: 0
+	texture: ./textures/paper.xpm
+}
+disk
+{
+	position: 0 -300 600
+	normal: 0 1 0
+	color: 100 100 255
+	radius: 180
+	innerRadius: 80
+	transparency: 0
+	reflection: 0.2
+	refraction: 0
+}
+disk
+{
+	position: -600 -300 2000
+	normal: 0 1 -0.3
+	color: 100 100 255
+	radius: 280
+	innerRadius: 180
+	transparency: 0
+	reflection: 0
+	refraction: 0
+}
+disk
+{
+	position: 600 -300 2000
+	normal: 0 1 -0.3
+	color: 100 100 255
+	radius: 280
+	innerRadius: 180
+	transparency: 0
+	reflection: 0
+	refraction: 0
+}

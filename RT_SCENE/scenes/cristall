@@ -1,0 +1,122 @@
+soft_shadows
+{
+	rays: 0
+}
+cam
+{
+	position: 500 -150 700
+	rotation: -15 40ice1 0
+}
+point_light
+{
+	position: 0 200 0
+	intensity: 1
+}
+triangle
+{
+	point0: -70 -250 1100
+	point1: 0 -100 1250
+	point2: 70 -250 1100
+	color: 20 50 200
+	transparency: 0.6
+	reflection: 0
+	refraction: 1.3
+}
+triangle
+{
+	point0: -70 -250 1350
+	point1: 0 -100 1250
+	point2: 70 -250 1350
+	color: 20 50 200
+	transparency: 0.6
+	reflection: 0
+	refraction: 1.3
+}
+triangle
+{
+	point0: -70 -250 1350
+	point1: 0 -100 1250
+	point2: -70 -250 1100
+	color: 200 50 200
+	transparency: 0.6
+	reflection: 0
+	refraction: 1.3
+}
+triangle
+{
+	point0: 70 -250 1350
+	point1: 0 -100 1250
+	point2: 70 -250 1100
+	color: 200 50 200
+	transparency: 0.6
+	reflection: 0
+	refraction: 1.3
+}
+triangle
+{
+	point0: -70 -250 1100
+	point1: 0 -400 1250
+	point2: 70 -250 1100
+	color: 20 50 200
+	transparency: 0.6
+	reflection: 0
+	refraction: 1.3
+}
+triangle
+{
+	point0: -70 -250 1350
+	point1: 0 -400 1250
+	point2: 70 -250 1350
+	color: 20 50 200
+	transparency: 0.3
+	reflection: 0
+	refraction: 0
+}
+triangle
+{
+	point0: -70 -250 1350
+	point1: 0 -400 1250
+	point2: -70 -250 1100
+	color: 200 50 200
+	transparency: 0.6
+	reflection: 0
+	refraction: 1.3
+}
+triangle
+{
+	point0: 70 -250 1350
+	point1: 0 -400 1250
+	point2: 70 -250 1100
+	color: 200 50 200
+	transparency: 0.6
+	reflection: 0
+	refraction: 1.3
+}
+plane
+{
+	position: 0 -400 0
+	normal: 0 1 0
+	color: 255 255 255
+	transparency: 0
+	reflection: 0.3
+	refraction: 0
+}
+plane
+{
+	position: 0 -300 2000
+	normal: 0 0 1
+	color: 255 255 255
+	transparency: 0
+	reflection: 0.3
+	refraction: 0
+}
+plane
+{
+	position: -1000 0 0
+	normal: 1 0 0
+	color: 255 255 255
+	transparency: 0
+	reflection: 0.3
+	refraction: 0
+	texture: ./textures/ice3.xpm
+}

@@ -1,0 +1,217 @@
+	In setup file you can set up parameters of location and visualization of this objects:
+* camera
+* point light
+* directional light
+* pararallel light
+* sphere
+* plane
+* ellips
+* limited cylinder
+* disc
+* capsule
+* cylinder
+* cone
+* triangle
+
+*** camera ***
+	For specifying a camera you must set the position and rotation.
+Position must set in local x, y ,z cords and rotation must set in degrese.
+Here is example:
+cam
+{
+    position: 0 -150 0
+    rotation: 0 0 0
+}
+
+*** soft_shadow ***
+For enabling soft shadows you must set int number of rays, more rays softer shadows.
+Here is example:
+soft_shadow
+{
+    rays: 2
+}
+
+*** point_light ***
+	For specifying a point_light you must set the position and intensity.
+Position must set in local x, y ,z cords and intensity must set from 0 to 1 and summ of intensitys of all lights must be equal to 1.
+Here is example:
+point_light
+{
+    position: 0 200 0
+    intensity: 1
+}
+
+*** direction_light ***
+	For specifying a direction_light you must set the position, intensity, direction and angle.
+Position must set in local x, y ,z cords and intensity must set from 0 to 1 and sum of intensities of all lights must be equal to 1. Direction must be set from 1 to 0, and angle in degrees.
+Here is example:
+direction_light
+{
+    position: 0 200 0
+    intensity: 1
+    direction: 0 0 0
+    angle: 30
+}
+
+*** parallel_light ***
+	For specifying a parallel_light you must set the position, intensity, direction and angle.
+Position must set in local x, y ,z cords and intensity must set from 0 to 1 and sum of intensities of all lights must be equal to 1. Direction must be set from 1 to 0.
+Here is example:
+parallel_light
+{
+    position: 0 200 0
+    intensity: 1
+    direction: 0 0 0
+}
+
+*** sphere ***
+	For specifying a sphere, the required parameters are the position, radius and color. Transparency, refraction, reflection,  and texture is not mandatory.
+Position must set in local x, y ,z cords, radius must set in local units, color must be set by setting R G B values from 0 to 255. Reflection transperency must set from 0 to 1 and their summ must be equal to 1. Refraction must be more then 1, you can enable/disable  by setting value to true or false. For adding texture you must write path to it starting with "./". 
+Here is example:
+sphere
+{
+    position: 0 -200 500
+    radius: 50
+    color: 255 255 0
+    transparency: 0
+    reflection: 1
+    refraction: 0
+    texture: ./textures/chess.xpm
+    : true
+}
+
+*** plane ***
+	For specifying a plane, the required parameters are the position, normal and color. Transparency, refraction, reflection,  and texture is not mandatory.
+Position must set in local x, y ,z cords, normal must set in local units from 1 to 0, color must be set by setting R G B values from 0 to 255. Reflection transperency must set from 0 to 1 and their summ must be equal to 1. Refraction must be more then 1, you can enable/disable  by setting value to true or false. For adding texture you must write path to it starting with "./". 
+Here is example:
+plane
+{
+    position: 1000 -300 0
+    normal: 1 0 0
+    color: 255 255 255
+    transparency: 0
+    reflection: 0.5
+    refraction: 0
+    texture: ./textures/chess.xpm
+    : true
+}
+
+*** ellips ***
+	For specifying a ellips, the required parameters are the position, size and color. Transparency, refraction and reflection is not mandatory.
+Position must set in local x, y ,z cords, size must set in local units, color must be set by setting R G B values from 0 to 255. Reflection transperency must set from 0 to 1 and their summ must be equal to 1. Refraction must be more then 1.
+Here is example:
+ellips
+{
+    position: 200 -200 500
+    size: 50 10 100
+    color: 255 255 0
+    transparency: 0.5
+	reflection: 0.5
+	refraction: 1.5
+}
+
+*** limited_cylinder ***
+	For specifying a limited_cylinder, the required parameters are the position, rotation, radius, length and color. Transparency, refraction,  and reflection is not mandatory.
+Centre must set in local x, y ,z cords, rotation set from 0 to 1, radius and length must set in local units, color must be set by setting R G B values from 0 to 255. Reflection transperency must set from 0 to 1 and their summ must be equal to 1. Refraction must be more then 1.
+Here is example:
+limited_cylinder
+{
+	position: 0 0 500
+	rotation: 0 1 1
+	radius: 50
+	length: 100
+	color: 255 255 0 0
+	transparency: 0.5
+	reflection: 0
+	refraction: 1.4
+}
+
+*** disk ***
+	For specifying a disk, the required parameters are the position, normal, radius, innerRadius and color. Transparency, refraction,  and reflection is not mandatory.
+Position must set in local x, y ,z cords, normal set from 0 to 1, radius and innerRadius must set in local units, color must be set by setting R G B values from 0 to 255. Reflection transparency must set from 0 to 1 and their summ must be equal to 1. Refraction must be more then 1.
+Here is example:
+disk
+{
+    position: 200 -200 500
+    normal: 0 1 0
+    radius: 50
+    innerRadius: 25
+    color: 255 20 100
+    transparency: 0.5
+	reflection: 0.5
+	refraction: 1.5
+}
+
+*** triangle ***
+	For specifying a triangle, the required parameters are the position of 3 vertices, and color. Transparency, refraction,  and reflection is not mandatory.
+Position of vertices must set in local x, y ,z cords, color must be set by setting R G B values from 0 to 255. Reflection transparency must set from 0 to 1 and their summ must be equal to 1. Refraction must be more then 1.
+Here is example:
+triangle
+{
+	point0: -200 -200 1000
+	point1: 200 200 1000
+	point2: 200 -200 1000
+	color: 20 50 200
+    transparency: 0.5
+    reflection: 0.5
+    refraction: 1.5
+}
+
+                ****_____ERORS GUIDE_____****
+If you specify the parameters incorrectly, the program will show you what the error is.
+
+*** Parse error: NOT VALID BLOCK NAME ***
+If you make mistake in name of block name you will see this error.
+Here is all valid block names:
+* camera
+* point light
+* directional light
+* pararallel light
+* sphere
+* plane
+* ellips
+* limited cylinder
+* disc
+* capsule
+* cylinder
+* cone
+* triangle
+
+*** Parse error: NOT VALID NUMBER ***
+If you try specify numeric parametrs with non numeric values you will see this error.
+
+*** Parse error: NOT VALID COLOR ***
+If you try specify RGB numeric parametrs with non numeric values, or type not 3 values you will see this error.
+
+*** Parse error: NOT VALID VECTOR ***
+If you try specify x, y, z params of vector with with non numeric valuesor type not 3 values you will see this error.
+
+*** Parse error: NUMBER NOT EXIST ***
+If you do not specify numeric parametrs you will see this error.
+
+*** Parse error: BLOCK NAME NOT EXIST ***
+If you do not specify block name you will see this error.
+
+*** Parse error: NOT VALID CAM PARAM ***
+If you make mistake in cam params you will see this error.
+
+*** Parse error: NOT VALID PARAM ***
+If you try to use not supported parameter in setup file you will see this error.
+
+*** Parse error: NOT VALID TEXTURE FILE ***
+If you try to use not existed texture file you will see this error.
+
+*** Parse error: NOT CORRECT LIGHT TYPE ***
+If you try to use not supported light typr in setup file you will see this error.
+
+*** Parse error: EMPTY LINE ***
+If you add excess empty lines in setup file you will see this error.
+
+*** Parse error: NOT VALID GLOSSINESS ***
+If you make mistake in  param you will see this error.
+
+*** NOT CORRECT FILE OR PATH ***
+If you try to use not existed scene file you will see this error.
+
+*** PARSE ERROR ***
+Any other parse erorrs.

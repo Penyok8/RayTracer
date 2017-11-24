@@ -1,0 +1,52 @@
+soft_shadows
+{
+	rays: 30
+}
+cam
+{
+	position: 0 0 -300
+	rotation: 0 0 0
+}
+point_light
+{
+	position: 0 50 -500
+	intensity: 1
+}
+limited_cylinder
+{
+	position: -150 -100 300
+	rotation: 1 1 0
+	radius: 20
+	length: 100
+	color: 150 150 150
+}
+capsule
+{
+	position: 0 50 300
+	rotation: 1 1 0
+	radius: 15
+	length: 300
+	color: 255 150 0
+}
+limited_cylinder
+{
+	position: 150 -100 300
+	rotation: -1 1 0
+	radius: 20
+	length: 100
+	color: 50 50 50
+}
+capsule
+{
+	position: 0 50 300
+	rotation: -1 1 0
+	radius: 15
+	length: 300
+	color: 0 0 255
+}
+plane
+{
+	position: 0 0 3500
+	normal: 0 0 1
+	color: 0 0 0
+}

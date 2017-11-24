@@ -1,0 +1,107 @@
+soft_shadows
+{
+	rays: 0
+}
+cam
+{
+	position: 0 -400 -2000
+	rotation: -15 0 0
+}
+point_light
+{
+	position: 0 0 -500
+	intensity: 1
+}
+capsule
+{
+	position: 400 -850 -1000
+	rotation: 0 0 1
+	radius: 100
+	length: 250
+	color: 255 255 255
+	reflection: 1
+}
+capsule
+{
+	position: 400 -850 -1000
+	rotation: 1 0 0
+	radius: 100
+	length: 250
+	color: 255 255 255
+	reflection: 1
+}
+capsule
+{
+	position: -300 -750 -900
+	rotation: 0 0 1
+	radius: 100
+	length: 250
+	color: 255 255 255
+	reflection: 1
+}
+capsule
+{
+	position: -300 -750 -900
+	rotation: 1 0 0
+	radius: 100
+	length: 250
+	color: 255 255 255
+	reflection: 1
+}
+capsule
+{
+	position: 0 -350 -500
+	rotation: 0 1 0
+	radius: 100
+	length: 250
+	color: 255 255 255
+	reflection: 1
+}
+capsule
+{
+	position: 0 -350 -500
+	rotation: 1 0 0
+	radius: 100
+	length: 250
+	color: 255 255 255
+	reflection: 1
+}
+plane
+{
+	position: 0 0 3500
+	normal: 0 0 1
+	color: 255 255 255
+	reflection: 0.5
+}
+plane
+{
+	position: 0 0 -3500
+	normal: 0 0 1
+	color: 255 255 255
+}
+plane
+{
+	position: 2000 0 0
+	normal: 1 0 0
+	color: 255 255 255
+}
+plane
+{
+	position: -2000 0 0
+	normal: 1 0 0
+	color: 255 255 255
+}
+plane
+{
+	position: 0 1000 0
+	normal: 0 1 0
+	color: 255 0 0
+	texture: ./textures/earth.xpm
+}
+plane
+{
+	position: 0 -1000 0
+	normal: 0 1 0
+	color: 255 0 0
+	texture: ./textures/chess.xpm
+}

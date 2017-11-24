@@ -1,0 +1,131 @@
+soft_shadows
+{
+	rays: 0
+}
+cam
+{
+	position: 0 -150 0
+	rotation: 0 0 0
+}
+point_light
+{
+	position: 0 200 0
+	intensity: 1
+}
+sphere
+{
+	position: -100 -200 300
+	color: 100 100 200
+	radius: 50
+	transparency: 0
+	reflection: 1
+	refraction: 0
+}
+sphere
+{
+	position: 200 -200 500
+	color: 100 100 200
+	radius: 50
+	transparency: 0
+	reflection: 1
+	refraction: 0
+}
+sphere
+{
+	position: 200 -400 900
+	color: 100 100 200
+	radius: 50
+	transparency: 0
+	reflection: 1
+	refraction: 0
+}
+sphere
+{
+	position: 600 -200 700
+	color: 100 100 200
+	radius: 50
+	transparency: 0
+	reflection: 1
+	refraction: 0
+}
+sphere
+{
+	position: -100 0 500
+	color: 100 100 200
+	radius: 40
+	transparency: 0
+	reflection: 1
+	refraction: 0
+}
+sphere
+{
+	position: 120 -50 500
+	color: 100 100 200
+	radius: 20
+	transparency: 0
+	reflection: 1
+	refraction: 0
+}
+sphere
+{
+	position: 210 -310 270
+	color: 100 100 200
+	radius: 60
+	transparency: 0
+	reflection: 1
+	refraction: 0
+}
+plane
+{
+	position: 1000 0 0
+	normal: 1 0 0
+	color: 255 255 255
+	transparency: 0
+	reflection: 0.5
+	refraction: 0
+}
+plane
+{
+	position: -1000 0 0
+	normal: 1 0 0
+	color: 255 255 255
+	transparency: 0
+	reflection: 0.5
+	refraction: 0
+}
+plane
+{
+	position: 0 -400 0
+	normal: 0 1 0
+	color: 255 255 255
+	transparency: 0
+	reflection: 0.5
+	refraction: 0
+}
+plane
+{
+	position: 0 1000 0
+	normal: 0 1 0
+	color: 255 255 255
+	transparency: 0
+	reflection: 0.5
+	refraction: 0
+}
+plane
+{
+	position: 0 -300 2000
+	normal: 0 0 1
+	color: 255 255 255
+	transparency: 0
+	reflection: 0.5
+	refraction: 0
+}
+plane
+{
+	position: 0 -300 -2000
+	normal: 0 0 1
+	color: 255 255 255
+	transparency: 0
+	reflection: 0.5
+	refraction: 0
+}
